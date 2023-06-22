@@ -1,7 +1,12 @@
+<!-- Author: Kiptoo
+Date Created: 16/06/2023 -->
+
+
 <!Doctype html>
 <html>
     <head>
         <title>Client Form</title>
+        <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
         <link rel="stylesheet" type="text/css" href="css.css">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" />
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
@@ -12,38 +17,38 @@
     <!--main section-->
     <div class="col-10 mainSection">
         <!--header section-->
-        <form>
+        <form name="First_Client_Form">
             <div class="row">
                 <div class="form-group row col-6">
                     <label for="clientId" class="col-sm-3 col-form-label sectionOne requiredField">Client ID</label>
                     <div class="input-group col-sm-9" id="clientIdSearch">
-                        <input type="text" id="clientId" class="form-control" placeholder="Client ID">
+                        <input type="text" id="clientId" class="form-control" placeholder="Client ID" required>
                         <button class="input-group-text" id="basic-addon2">Search</button>
                     </div>
                 </div>
                 <div class="form-group row col-6">
                     <div class="row sectionOne">
-                        <label for="clientId" class="col-sm-5 col-form-label requiredField">Client Type</label>
+                        <label  class="col-sm-5 col-form-label requiredField">Client Type</label>
                         <div class="col-sm-7">
-                            <select class="clientType custom-select" >
+                            <select class="clientType custom-select" required>
                                 <option>Enterprises</option>
                                 <option>Demo 2</option>
                             </select>
                         </div>
                     </div>
                     <div class="row sectionOne">
-                        <label for="clientId" class="col-sm-5 col-form-label requiredField">Segment Type</label>
+                        <label  class="col-sm-5 col-form-label requiredField">Segment Type</label>
                         <div class="col-sm-7">
-                            <select class="clientType">
+                            <select class="clientType" required>
                                 <option>Corporate</option>
                                 <option>Demo 2</option>
                             </select>
                         </div>
                     </div>
                     <div class="row sectionOne">
-                        <label for="clientId" class="col-sm-5 col-form-label requiredField">Sub-Segment Type</label>
+                        <label  class="col-sm-5 col-form-label requiredField">Sub-Segment Type</label>
                         <div class="col-sm-7">
-                            <select class="clientType">
+                            <select class="clientType" required>
                                 <option>Public Limited Company</option>
                                 <option>Demo 2</option>
                             </select>
@@ -67,7 +72,7 @@
                 <div class="form-group row col-12 sectionOne">
                     <label for="clientName" class="col-sm-2 col-form-label sectionOne requiredField">Client Name</label>
                     <div class="col-sm-10">
-                      <input type="text" class="form-control" id="clientName" placeholder="Client Name">
+                      <input type="text" class="form-control" id="clientName" placeholder="Client Name" required>
                     </div>   
                 </div>
                 <div class="form-group row col-12 sectionOne">
@@ -79,6 +84,9 @@
                 </div>
             </div>
         </form>
+         
+        <!-- Thematic break -->
+        
         <hr class="separator">
 
         <!--second section-->
@@ -97,13 +105,13 @@
                     <div class="form-group row col-12 sectionOne">
                         <label for="companyName" class="col-sm-2 col-form-label requiredFieldTwo">Company Name</label>
                         <div class="col-sm-10">
-                          <input type="text" class="form-control" id="companyName" placeholder="Company Name">
+                          <input type="text" class="form-control" id="companyName" placeholder="Company Name" required>
                         </div>   
                     </div>
                     <div class="row sectionOne col-12">
-                        <label for="clientId" class="col-sm-2 col-form-label requiredFieldTwo">Line of Business</label>
+                        <label  class="col-sm-2 col-form-label requiredFieldTwo">Line of Business</label>
                         <div class="col-sm-10">
-                            <select class="clientType custom-select lineOfBusiness" >
+                            <select class="clientType custom-select lineOfBusiness" required >
                                 <option>Proprietary</option>
                                 <option>Demo 2</option>
                             </select>
@@ -115,10 +123,18 @@
                             <input type="text" class="form-control" id="businessInfo" placeholder="Line of Business More Info">
                         </div>   
                     </div>
+
+                    <div class="form-group row col-12 sectionOne">
+                        <label for="NatureBusinessID" class="col-sm-2 col-form-label requiredFieldTwo">Nature of Business</label>
+                        <div class="col-sm-10">
+                          <input type="text" class="form-control" id="NatureBusinessID" placeholder="Nature of Business" required>
+                        </div>   
+                    </div>
+
                     <div class="row sectionOne col-12">
                         <label for="identificationType" class="col-sm-2 col-form-label requiredFieldTwo">Identification Type</label>
                         <div class="col-sm-10">
-                            <select class="identificationType custom-select" >
+                            <select class="identificationType custom-select" required>
                                 <option>--select--</option>
                                 <option>Demo 2</option>
                             </select>
@@ -128,7 +144,7 @@
                         <div class="row sectionOne col-6">
                             <label for="registrationNo" class="col-sm-4 col-form-label requiredFieldTwo">Registration No</label>
                             <div class="col-sm-8">
-                                <input type="text" class="form-control" id="registrationNo" placeholder="Registration No">
+                                <input type="text" class="form-control" id="registrationNo" placeholder="Registration No" required>
                             </div> 
                         </div>
                         <div class="row sectionOne col-6">
@@ -192,7 +208,7 @@
                         <div class="row sectionOne col-6">
                             <label for="relationshipManager" class="col-sm-4 col-form-label requiredFieldTwo">RelationShip Manager</label>
                             <div class="col-sm-8">
-                                <select class="custom-select w-100" >
+                                <select class="custom-select w-100" required>
                                     <option>--select--</option>
                                     <option>Demo 2</option>
                                 </select>
@@ -201,7 +217,7 @@
                         <div class="row sectionOne col-6">
                             <label for="openedOn" class="col-sm-4 col-form-label requiredFieldTwo">Opened On</label>
                             <div class="col-sm-8">
-                                <select class="custom-select w-100" >
+                                <select class="custom-select w-100" required>
                                     <option>--select--</option>
                                     <option>Demo 2</option>
                                 </select>
@@ -226,7 +242,7 @@
                         <div class="row sectionOne col-6">
                             <label for="residentialAddress" class="col-sm-4 col-form-label requiredFieldTwo">Residential Address</label>
                             <div class="col-sm-8">
-                                <input type="text" class="form-control" id="residentialAddress" placeholder="Residential Address">
+                                <input type="text" class="form-control" id="residentialAddress" placeholder="Residential Address" required>
                             </div> 
                         </div>
                         <div class="row sectionOne col-6">
@@ -246,7 +262,7 @@
                         <div class="row sectionOne col-6">
                             <label for="mailingAddress" class="col-sm-4 col-form-label requiredFieldTwo">Mailing Address</label>
                             <div class="col-sm-8">
-                                <input type="text" class="form-control" id="mailingAddress" placeholder="Business Address">
+                                <input type="text" class="form-control" id="mailingAddress" placeholder="Business Address" required>
                             </div> 
                         </div>
                     </div>
@@ -282,7 +298,7 @@
                         <div class="row sectionOne col-6">
                             <label for="country" class="col-sm-4 col-form-label requiredFieldTwo">Country</label>
                             <div class="col-sm-8">
-                                <select class="custom-select w-100" >
+                                <select class="custom-select w-100" required>
                                     <option>Tanzania</option>
                                     <option>Demo 2</option>
                                 </select>
@@ -299,7 +315,7 @@
                         <div class="row sectionOne col-6">
                             <label for="regionTwo" class="col-sm-4 col-form-label requiredFieldTwo">Region</label>
                             <div class="col-sm-8">
-                                <select class="custom-select w-100" >
+                                <select class="custom-select w-100" required>
                                     <option>Arusha</option>
                                     <option>Demo 2</option>
                                 </select>
@@ -316,8 +332,8 @@
                         <div class="row sectionOne col-6">
                             <label for="ward" class="col-sm-4 col-form-label requiredFieldTwo">Ward</label>
                             <div class="col-sm-8">
-                                <select class="custom-select w-100" >
-                                    <option>Bomambuzi</option>
+                                <select class="custom-select w-100" required>
+                                    <option>BOMAMBUZI</option>
                                     <option>Demo 2</option>
                                 </select>
                             </div>
@@ -325,8 +341,8 @@
                         <div class="row sectionOne col-6">
                             <label for="district" class="col-sm-4 col-form-label requiredFieldTwo">District</label>
                             <div class="col-sm-8">
-                                <select class="custom-select w-100" >
-                                    <option>Hai</option>
+                                <select class="custom-select w-100" required>
+                                    <option>HAI</option>
                                     <option>Demo 2</option>
                                 </select>
                             </div>
@@ -336,13 +352,13 @@
                         <div class="row sectionOne col-6">
                             <label for="phoneWork" class="col-sm-4 col-form-label normalFieldTwo">Phone (Work)</label>
                             <div class="col-sm-8">
-                                <input type="text" class="form-control" id="phoneWork" placeholder="Phone (Work)">
+                                <input type="tel" class="form-control" id="phoneWork" placeholder="Phone (Work)">
                             </div> 
                         </div>
                         <div class="row sectionOne col-6">
                             <label for="mobile" class="col-sm-4 col-form-label requiredFieldTwo">Mobile</label>
                             <div class="col-sm-8">
-                                <input type="text" class="form-control" id="mobile" placeholder="Mobile">
+                                <input type="tel" class="form-control" id="mobile" placeholder="Mobile" required>
                             </div> 
                         </div>
                     </div>
@@ -356,7 +372,7 @@
                         <div class="row sectionOne col-6">
                             <label for="emailId" class="col-sm-4 col-form-label normalFieldTwo">Email ID</label>
                             <div class="col-sm-8">
-                                <input type="text" class="form-control" id="emailId" placeholder="Email ID">
+                                <input type="email" class="form-control" id="emailId" placeholder="Email ID">
                             </div> 
                         </div>
                     </div>
@@ -434,59 +450,59 @@
             <h2 class="innerTitle">Behind the Scene</h2> 
             <form>
                 <div class="row">
-                    <div class="row sectionOne col-4">
+                 <div class="row sectionOne col-4">
                         <label for="status" class="col-sm-3 col-form-label normalFieldThree">Status</label>
-                        <div class="col-sm-9">
-                            <input type="text" class="form-control" id="status" placeholder="Status">
+                        <div class="col-sm-9 bhscene">
+                            <input type="text" class="form-control inputPlace" id="status" placeholder="Status">
                         </div> 
-                    </div>
-                    <div class="row sectionOne col-4">
+                   </div>
+                   <div class="row sectionOne col-4">
                         <label for="openedDate" class="col-sm-3 col-form-label normalFieldThree">Opened Date</label>
-                        <div class="col-sm-9">
-                            <input type="date" class="form-control" id="openedDate" placeholder="Opened Date">
+                        <div class="col-sm-9 bhscene">
+                            <input type="date" class="form-control inputPlace" id="openedDate" placeholder="Opened Date">
                         </div> 
                     </div>
                     <div class="row sectionOne col-4">
-                        <label for="landMark" class="col-sm-3 col-form-label normalFieldThree">Land Mark</label>
-                        <div class="col-sm-9">
-                            <input type="text" class="form-control" id="landMark" placeholder="Land Mark">
+                        <label for="ClosedDate" class="col-sm-3 col-form-label normalFieldThree">Closed Date</label>
+                        <div class="col-sm-9 bhscene">
+                            <input type="date" class="form-control inputPlace" id="ClosedDate" placeholder="Closed Date">
                         </div> 
                     </div>
 
                     <div class="row sectionOne col-4">
                         <label for="createdBy" class="col-sm-3 col-form-label normalFieldThree">Created By</label>
-                        <div class="col-sm-9">
-                            <input type="text" class="form-control" id="createdBy" placeholder="Created By">
+                        <div class="col-sm-9 bhscene">
+                            <input type="text" class="form-control inputPlace" id="createdBy" placeholder="Created By">
                         </div> 
                     </div>
                     <div class="row sectionOne col-4">
                         <label for="modifiedBy" class="col-sm-3 col-form-label normalFieldThree">Modified By</label>
-                        <div class="col-sm-9">
-                            <input type="text" class="form-control" id="modifiedBy" placeholder="Modified By">
+                        <div class="col-sm-9 bhscene">
+                            <input type="text" class="form-control inputPlace" id="modifiedBy" placeholder="Modified By">
                         </div> 
                     </div>
                     <div class="row sectionOne col-4">
                         <label for="supervisedBy" class="col-sm-3 col-form-label normalFieldThree">Supervised By</label>
-                        <div class="col-sm-9">
-                            <input type="text" class="form-control" id="supervisedBy" placeholder="Supervised By">
+                        <div class="col-sm-9 bhscene">
+                            <input type="text" class="form-control inputPlace" id="supervisedBy" placeholder="Supervised By">
                         </div> 
                     </div>
                     <div class="row sectionOne col-4">
                         <label for="createdOn" class="col-sm-3 col-form-label normalFieldThree">Created On</label>
-                        <div class="col-sm-9">
-                            <input type="date" class="form-control" id="createdOn" placeholder="Created On">
+                        <div class="col-sm-9 bhscene">
+                            <input type="date" class="form-control inputPlace" id="createdOn" placeholder="Created On">
                         </div> 
                     </div>
                     <div class="row sectionOne col-4">
                         <label for="modifiedOn" class="col-sm-3 col-form-label normalFieldThree">Modified On</label>
-                        <div class="col-sm-9">
-                            <input type="date" class="form-control" id="modifiedOn" placeholder="Modified On">
+                        <div class="col-sm-9 bhscene">
+                            <input type="date" class="form-control inputPlace" id="modifiedOn" placeholder="Modified On">
                         </div> 
                     </div>
                     <div class="row sectionOne col-4">
-                        <label for="supervisedOn" class="col-sm-3 col-form-label normalFieldThree">Supervised On</label>
-                        <div class="col-sm-9">
-                            <input type="date" class="form-control" id="supervisedOn" placeholder="Supervised On">
+                        <label for="supervisedOn" class="col-sm-4 col-form-label normalFieldThree">Supervised On</label>
+                        <div class="col-sm-8 bhscene">
+                            <input type="date" class="form-control inputPlace" id="supervisedOn" placeholder="Supervised On">
                         </div> 
                     </div>
                 </div>
@@ -521,6 +537,7 @@
  </div>
 
 <script src="myScript.js"></script>  
+<script src="validation.js"></script> <!--This is a javascript validation form still under development -->  
 </body>
 
 
